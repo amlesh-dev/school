@@ -1,0 +1,23 @@
+.HomeCarousel{
+    color: antiquewhite;
+    :global(.slick-dots){
+        bottom: 25px;
+    }
+    :global(.slick-next){
+        right: 50px;
+    }
+    :global(.slick-prev){
+        left: 50px;
+        z-index: 10;
+    }
+    :global(.slick-dots li button:before){
+        font-size: 10px;
+        color: #fff;
+    }
+    :global(.slick-prev:before){
+        font-size: 30px;
+    }
+    :global(.slick-next:before){
+        font-size: 30px;
+    }
+}

@@ -6,7 +6,7 @@ import styles from "./index.module.scss";
 
 const Carousel = ({ settings, carouselData }) => {
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="">
       {carouselData?.map((data) => {
         return (
           <div className={styles.carouselWrap}>

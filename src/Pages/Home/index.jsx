@@ -1,6 +1,7 @@
 import Carousel from "../../Component/Carousel";
 import Navbar from "../../Component/Navbar";
 import sampleImages from "../../Assests/images/samples.jpg";
+import style from "./index.module.scss";
 
 const Home = () => {
   const settings = {
@@ -9,6 +10,7 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
   };
   const carouselData = [
     {
@@ -40,7 +42,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <Carousel settings={settings} carouselData={carouselData} />
+      <div className={style.HomeCarousel}>
+        <Carousel settings={settings} carouselData={carouselData} />
+      </div>
     </>
   );
 };
