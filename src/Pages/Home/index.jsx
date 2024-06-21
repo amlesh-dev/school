@@ -1,5 +1,4 @@
 import Carousel from "../../Component/Carousel";
-import Navbar from "../../Component/Navbar";
 import sampleImages from "../../Assests/images/samples.jpg";
 import style from "./index.module.scss";
 
@@ -41,7 +40,6 @@ const Home = () => {
   ];
   return (
     <>
-      <Navbar />
       <div className={style.HomeCarousel}>
         <Carousel settings={settings} carouselData={carouselData} />
       </div>
