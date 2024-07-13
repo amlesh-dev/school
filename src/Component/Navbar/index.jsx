@@ -16,6 +16,15 @@ const Navbar = () => {
               >
                 Home
               </span>
+
+              <span
+                className={styles.labels}
+                onClick={() => {
+                  navigate("/school/admission");
+                }}
+              >
+                Admission
+              </span>
               <span
                 className={styles.labels}
                 onClick={() => {
@@ -27,10 +36,10 @@ const Navbar = () => {
               <span
                 className={styles.labels}
                 onClick={() => {
-                  navigate("/school/admission");
+                  navigate("/school/contact");
                 }}
               >
-                Admission
+                Contact
               </span>
             </div>
           </div>
